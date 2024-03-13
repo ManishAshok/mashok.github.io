@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manish Ashok Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8560688111.js" crossorigin="anonymous"></script>   
+    </head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo" />
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer, Business Analyst, UX Developer</p>
+            <h1>Hi, I'm <span>Manish Ashok</span><br> from Cal Poly Pomona.</h1>
+        </div>
+    </div>
+</div>
+<!--------------------about------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png">
+            </div>
+            <div class="about-col-2">
+                <style>
+                    p {
+                      margin-bottom: 20px;
+                      text-align: justify; 
+                    }
+                  </style>
+                <h1 class="sub-title">About me</h1>
+                <p><span>Hello and welcome to my personal corner on the web! I’m Manish Ashok, a driven and passionate data enthusiast currently navigating the fascinating world of Business Analytics at California State Polytechnic University, Pomona.</span><br></p>
+                <p><span>My journey in the field of Software Development, Data Analysis and Business Intelligence began with roles such as Full Stack Developer, Business Analyst, Business Intelligence Analyst. I take pride in my ability to translate complex datasets into actionable insights, striving to make a tangible impact on business operations and customer experiences.</span><br></p>
+                <p><span>Outside of work and academics, you’ll find me exploring the latest in technology trends, diving deep into data science blogs, or capturing the beauty of nature through my camera lens. I believe in continuous learning and am always on the lookout for new challenges that push me out of my comfort zone.</span></p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                       <li><span>Programming Skills</span><br>C++, C, Java, Python, JavaScript, Dart, HTML, CSS, Rest APIs, VBA Scripts</li> 
+                       <li><span>Data Bases</span><br>SQL (MySQL, MS SQL, PostgreSQL, OracleDB), NoSQL(MongoDB, Dynamo DB, Orient DB)</li> 
+                       <li><span>Frameworks/Libraries</span><br>NodeJS, ReactJS, AngularJS, AJAX, Express, Flask, Junit, Springboot, Guice, Map/Reduce</li>
+                       <li><span>Tools</span><br>Power BI, Tableau, AWS(EC2, S3), git, Docker, Kubernetes, Flutter, SonarQube, Apache Tomcat, Unix, bash</li>
+                       <li><span>Enterprise Software Skills</span><br>SAP S/4 Hana, SAP ERP, SAP NetWeaver, SAP TM, SAP CSL, SAP MM</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                       <li><span>Aug 2023 - Feb 2024</span><br>Business Services Student Leader at Cal Poly Pomona</li> 
+                       <li><span>Sep 2022 - Aug 2023</span><br>Full Stack Developer at Karnataka State Forest Department</li> 
+                       <li><span>Aug 2021 - Aug 2022</span><br>Business Analyst at Krypt India Private Limited</li>
+                       <li><span>Jan 2021 - Jul 2021</span><br>Internship as Business Intelligence Analyst at xklsv internet media private limited </li>
+                       <li><span>Jun 2020 - Jan 2021</span><br>Internship at Cognitive Solution</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                       <li><span>Aug 2023 - Aug 2025</span><br>Master of Science in Business Analytics @ Cal Poly Pomona</li> 
+                       <li><span>Aug 2017 - Jul 2021</span><br>BE in Computer Science from Bangalore Institute of Technology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------Projects----------- --->
+<style>
+    p {
+        margin-bottom: 20px;
+        text-align: justify; 
+    }
+</style>
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="Projects-list">
+            <div>
+                <i class="fas fa-shield-halved"></i>
+                <h2>Detection of Zero Day Security Threat using ML</h2>
+                <p>Our method for spotting dormant malware utilized Python and its rich data processing and machine learning libraries, like Scikit-learn and Pandas. We began by assembling and preparing data, extracting features from network and system logs that signal malware presence. A classification model was trained with these features, using varied algorithms to discern malware from benign software effectively. Through iterative development, we continually refined our model with fresh data, aiming to boost precision and minimize false alarms. This project demonstrated the potential of machine learning in identifying security threats using system and environmental variables.<br></p>
+                <p>"Paper entitled the same was published in International Journal of Current Engineering And Scientific Research, Volume-8, Issue-9."<br></p>
+                <a href="http://troindia.in/journal/ijcesr/vol8iss9/1-6.pdf">View Publication</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-twitter"></i>
+                <h2>Twitter Feed Live mood detection Chrome Extension</h2>
+                <p>For the Live Mood Detection Twitter Feed Chrome Extension, I employed a sophisticated technology stack. The core of the extension was developed using JavaScript, the standard scripting language for Chrome extensions, allowing for dynamic content manipulation within the Twitter feed. HTML and CSS were utilized for crafting the user interface, ensuring a seamless and intuitive experience. The sentiment analysis was powered by the VadarSentiment Python library, which required an integrated approach to connect Python's processing capabilities with the JavaScript-driven extension. This was accomplished through a background script that communicated with a Python server to analyze tweet sentiments in real time.<br></p>
+                <p>The choice of tools ensured a robust and responsive extension that enriches user interaction with social media content</p>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Dog Care Provider</h2>
+                <p>In the Dog Care Provider initiative, we capitalized on Spring Framework's capabilities, focusing on its robust ecosystem that encompasses Spring MVC for web request management and Spring Security for advanced authentication and authorization processes. Utilizing Java, we structured server-side operations that effectively respond to user requests. Spring Boot was employed for quick development, minimizing redundant code and prioritizing our business objectives. <br></p> 
+                <p>We integrated Amazon DynamoDB with the AWS SDK for Java, ensuring scalable and secure data transactions. This streamlined interactions and enhanced user experiences, making our application more responsive and secure.</p>
+            </div>
+            <div>
+                <i class="fas fa-database"></i>
+                <h2>Smart Inventory Management</h2>
+                <p>The creation of our Smart Inventory Management system involved Python and Django for backend operations, with PostgreSQL for database needs. Django's ORM was crucial for smooth database interactions, and we developed a user-friendly frontend with HTML, CSS, and JavaScript. A significant hurdle was real-time inventory updates, which we surmounted by incorporating Django Channels and WebSocket for asynchronous data communication. <br></p> 
+                <p>Following Agile principles, our development consisted of sprints to address specific functionalities, allowing for adaptability and continuous enhancement. The outcome was a dynamic, user-centric inventory system that efficiently handled data.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!---------------portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Tender Calling App</h3>
+                    <p>The app connects the department wing to the clients.
+                    Benefitting the clients with anouncements, auctions and info.</p>
+                    <a href="https://github.com/ManishAshok/Tender-Calling-App.git" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Dog Care Provider App</h3>
+                    <p>The app connects care centers to the customers.<br>
+                       Facilitates the customers with services, pricing, nearby stores available, etc.</p>
+                       <a href="https://github.com/ManishAshok/Dog-Care-Provider.git" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Smart Inventory Management App</h3>
+                    <p>A mobile application designed for efficient and 
+                    streamlined inventory management, enhancing control and organization for businesses on the go.</p>
+                    <a href="https://github.com/ManishAshok/Smart-Inventory-Management-App.git" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-----------------------contact--------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fas fa-paper-plane"></i> manishmanjunath99@gmail.com</p>
+                <p><i class="fas fa-square-phone"></i> +1(909) 616-9836</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/manish-ashok-54230a110/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Manish-Ashok-Web-Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type=" text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fas fa-copyright"></i> Copyright Manish Ashok </p>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+
+
+</script>
+
+  <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzjvqoaw218fQ-tzLBYbZS2Ql3zFULkd3zBDuJ6YZTcFZzEjf8pHO1CDyn8H05HtLuc/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script>
+    function toggleDescription(card) {
+        const moreInfo = card.querySelector('.more-info');
+        const isVisible = moreInfo.style.display === 'block';
+        moreInfo.style.display = isVisible ? 'none' : 'block';
+    }
+    </script>
+</body>
+</html>
